@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_register"
+    tools:context="com.example.bitware.keemory.RegisterPatient">
+
+    <LinearLayout
+        android:id="@+id/lay_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="?attr/actionBarSize" >
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingRight="10dp">
+
+            <com.example.bitware.keemory.RoundedImageView
+                android:id="@+id/ic_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_camera"
+                android:maxHeight="80dp"
+                android:maxWidth="80dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_foto"
+                android:text="Foto de perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ic_folder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_folder"
+                    android:paddingRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_carpeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Añadir"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_name"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/lay_foto"
+        android:paddingTop="?attr/actionBarSize"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_foto"
+        android:hint="Nombre"
+        android:textColorHint="#FFFFFF"
+        android:layout_toRightOf="@+id/ic_name"
+        android:paddingTop="?attr/actionBarSize"/>
+
+    <ImageView
+        android:id="@+id/ic_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_address"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/ic_name"
+        android:paddingTop="?attr/actionBarSize"/>
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:hint="Domicilio"
+        android:textColorHint="#FFFFFF"
+        android:layout_toRightOf="@+id/ic_address"
+        android:paddingTop="?attr/actionBarSize"/>
+
+    <!--<RelativeLayout
+        android:id="@+id/newFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></RelativeLayout>-->
+
+    <ImageView
+        android:id="@+id/ic_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_phone"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/ic_address"
+        android:paddingTop="?attr/actionBarSize"/>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_address"
+        android:hint="Teléfono"
+        android:textColorHint="#FFFFFF"
+        android:layout_toRightOf="@+id/ic_phone"
+        android:paddingTop="?attr/actionBarSize"/>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFEFBF"
+        android:text="Guardar"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

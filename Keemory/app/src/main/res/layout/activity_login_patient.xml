@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_login"
+    tools:context="com.example.bitware.keemory.LoginPatient">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true">
+
+        <com.example.bitware.keemory.RoundedImageView
+            android:id="@+id/ic_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ic_ckp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_phone"
+        android:paddingRight="10dp"
+        android:paddingTop="?attr/actionBarSize"/>
+
+    <EditText
+        android:id="@+id/et_ckp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_address"
+        android:hint="Código Único"
+        android:textColorHint="#FFFFFF"
+        android:layout_toRightOf="@+id/ic_ckp"
+        android:paddingTop="?attr/actionBarSize"/>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFEFBF"
+        android:text="Acceder"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
