@@ -87,6 +87,8 @@ public class Keemory extends ActionBarActivity {
                         Patient patientInfo = new Patient();
                         patientInfo.setName(name);
                         patientInfo.setId(ic_photo);
+                        patientData.get(i).getLat();
+                        patientData.get(i).getLon();
 
                         idPatient[i] = patientId;
                         position[i] = i;
