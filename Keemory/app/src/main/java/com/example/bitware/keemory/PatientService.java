@@ -6,6 +6,7 @@ import retrofit.Callback;
 import retrofit.http.Body;
 import retrofit.http.GET;
 import retrofit.http.POST;
+import retrofit.http.PUT;
 import retrofit.http.Path;
 
 /**
@@ -17,4 +18,7 @@ public interface PatientService {
 
     @GET("/patients/{ckp}")
     public void getPatientInfo(@Path("ckp")String ckp, Callback<List<Patient>> callBack);
+
+    @PUT("/patients/{id}")
+    public void updateLocationPatient(@Path("id") String id,@Body Patient body, Callback<List<Patient>> callback);
 }
