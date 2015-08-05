@@ -1,0 +1,19 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET     /patient                    controllers.PatientController.getAllPatients()
+POST    /patient                    controllers.PatientController.createPatient()
+GET     /patient/:id                controllers.PatientController.getPatient(id:Integer)
+
+POST     /carer/:id1/patient/:id2          controllers.CarerController.addPatient(id2:String, id1:Integer)
+
+GET     /carer                      controllers.CarerController.getAllCarer()
+POST    /carer                      controllers.CarerController.createCarer()
+GET     /carer/:id                  controllers.CarerController.getCarer(id:Integer)
+GET 	/carer/:id/patients         controllers.CarerController.getPatients(id:Integer)
