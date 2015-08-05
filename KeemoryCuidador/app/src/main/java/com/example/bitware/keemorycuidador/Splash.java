@@ -1,5 +1,6 @@
 package com.example.bitware.keemorycuidador;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ public class Splash extends ActionBarActivity {
         StartAnimations();
         timer = new CountDown(3000,1000,this,CarerRegister.class);
         timer .start();
+
     }
 
     private void StartAnimations() {

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/material_deep_teal_500"
+    tools:context="com.example.kody.project.colors">
+
+    <TextView android:text="Relaciona la palabra de arriba con el color de abajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textStyle="bold"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/txtColor"
+        android:layout_above="@+id/txtWord"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Palabra"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/txtWord"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Si"
+        android:id="@+id/bntYes"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:background="@android:color/transparent"
+        android:id="@+id/btnNo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntaje"
+        android:id="@+id/textPoints"
+        android:layout_alignBottom="@+id/bntYes"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

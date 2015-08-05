@@ -242,7 +242,7 @@ public class RegisterPatient extends ActionBarActivity {
 
     public void saveDataOnserver(String name, String address, String phone, String ckc){
         RestAdapter restAdapter = new RestAdapter.Builder()
-                .setEndpoint("http://192.168.1.66:9000")
+                .setEndpoint("http://192.168.104.81:9000")
                 .build();
         PatientService post = restAdapter.create(PatientService.class);
         Patient patient = new Patient();

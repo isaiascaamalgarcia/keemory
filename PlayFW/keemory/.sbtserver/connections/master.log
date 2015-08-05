@@ -1,0 +1,43 @@
+New log file opened at Sat Aug 01 23:30:15 CDT 2015 by 5980@Kody-PC
+Taking next connection to: 58913
+New client attempting to connect on port: 58914-58913
+  Address = /192.168.1.66:58913
+This client on port 58914 has uuid d8aeb5ce-8552-4fb6-b6f0-f41733b8a611 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-d8aeb5ce-8552-4fb6-b6f0-f41733b8a611
+Taking next connection to: 58913
+New client attempting to connect on port: 58933-58913
+  Address = /192.168.1.66:58913
+Handshake exception on socket: 58933
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 58913
+New client attempting to connect on port: 58934-58913
+  Address = /192.168.1.66:58913
+This client on port 58934 has uuid 7b0f298c-0418-4228-928c-43af67091b31 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7b0f298c-0418-4228-928c-43af67091b31
+Taking next connection to: 58913
+New client attempting to connect on port: 58944-58913
+  Address = /192.168.1.66:58913
+Handshake exception on socket: 58944
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 58913
+New client attempting to connect on port: 58945-58913
+  Address = /192.168.1.66:58913
+This client on port 58945 has uuid b55e1476-b6b8-4d63-85ed-42162a83ab80 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7b0f298c-0418-4228-928c-43af67091b31, activator-b55e1476-b6b8-4d63-85ed-42162a83ab80
+Taking next connection to: 58913

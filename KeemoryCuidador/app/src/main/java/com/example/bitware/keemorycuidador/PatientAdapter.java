@@ -1,12 +1,14 @@
 package com.example.bitware.keemorycuidador;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -75,6 +77,10 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientH
         }
         viewHolder.ic_photo.setImageBitmap(bitmap);
         viewHolder.tv_name.setText(currentPatiente.getName());
+        viewHolder.lat = currentPatiente.getLat();
+        viewHolder.lon = currentPatiente.getLon();
+
+
     }
 
     @Override
@@ -82,15 +88,24 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientH
         return patients.size();
     }
 
-    class PatientHolder extends RecyclerView.ViewHolder{
+    class PatientHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         ImageView ic_photo;
         TextView tv_name;
+        Button btnMapa;
+        String lat, lon;
 
         public PatientHolder(View itemView) {
             super(itemView);
             ic_photo = (ImageView) itemView.findViewById(R.id.ic_photo);
             tv_name = (TextView) itemView.findViewById(R.id.tv_name);
+            btnMapa = (Button) itemView.findViewById(R.id.btnMap);
+            btnMapa.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+
         }
     }
 }
