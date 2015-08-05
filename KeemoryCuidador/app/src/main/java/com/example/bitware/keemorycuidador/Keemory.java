@@ -55,7 +55,6 @@ public class Keemory extends ActionBarActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         rv = (RecyclerView)findViewById(R.id.rv_patients);
-
         rv.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         //cargarPreferencias();
         fillRecyclerView();
