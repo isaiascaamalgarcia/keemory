@@ -20,10 +20,10 @@ import com.melnykov.fab.FloatingActionButton;
 
 
 
-    ImageView btnMemory, btnGnosias, btnFunc;
 
 
 public class Keemory extends ActionBarActivity implements LocationListener{
+    ImageView btnMemory, btnGnosias, btnFunc;
 
     private FloatingActionButton fab = new FloatingActionButton(getApplication());
     private LocationManager locationManager;

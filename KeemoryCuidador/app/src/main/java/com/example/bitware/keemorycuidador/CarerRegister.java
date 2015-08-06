@@ -65,7 +65,7 @@ public class CarerRegister extends ActionBarActivity {
 
     public void saveDataOnserver(String name, String address, String phone, String ckc){
         RestAdapter restAdapter = new RestAdapter.Builder()
-                .setEndpoint("http://192.168.1.66:9000")
+                .setEndpoint("http://192.168.1.67:9000")
                 .build();
         CarerService post = restAdapter.create(CarerService.class);
         Carer carer = new Carer();

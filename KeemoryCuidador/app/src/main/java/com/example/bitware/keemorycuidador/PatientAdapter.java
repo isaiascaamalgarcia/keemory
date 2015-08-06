@@ -54,7 +54,7 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientH
         Patient currentPatiente = patients.get(i);
         URL url = null;
         try {
-            url = new URL("https://www.colourbox.com/preview/11111197-brain-icon-vector-on-black-background.jpg");
+            url = new URL(currentPatiente.getPhotoUrl());
             URLConnection conn = url.openConnection();
             conn.connect();
             conn.setReadTimeout(1000);

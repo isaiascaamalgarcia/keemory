@@ -62,7 +62,7 @@ public class Keemory extends ActionBarActivity {
 
     public void fillRecyclerView(){
         RestAdapter.Builder builder = new RestAdapter.Builder();
-        builder.setEndpoint("http://192.168.1.66:9000");
+        builder.setEndpoint("http://192.168.1.67:9000");
         RestAdapter restAdapter = builder.build();
 
         PatientService service = restAdapter.create(PatientService.class);
@@ -81,13 +81,13 @@ public class Keemory extends ActionBarActivity {
                         ic_photo = R.drawable.ic_launcher;
                         ic_call = R.drawable.lg_keemory;
                         ic_gps = R.drawable.ic_launcher;
-                        patientId = patientData.get(i).getId();
 
                         Patient patientInfo = new Patient();
+                        patientInfo.setId(patientData.get(i).getId());
                         patientInfo.setName(name);
-                        patientInfo.setId(ic_photo);
-                        patientData.get(i).getLat();
-                        patientData.get(i).getLon();
+                        patientInfo.setPhotoUrl(patientData.get(i).getPhotoUrl());
+                        patientInfo.setLat(patientData.get(i).getLat());
+                        patientInfo.setLon((patientData.get(i).getLon()));
 
                         idPatient[i] = patientId;
                         position[i] = i;

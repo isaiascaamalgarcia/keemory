@@ -6,9 +6,18 @@ package com.example.bitware.keemorycuidador;
 public class Patient {
 
     int id;
+    String photoUrl;
     String name;
     String lon;
     String lat;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getLon() {
         return lon;
@@ -26,19 +35,19 @@ public class Patient {
         this.lat = lat;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPhotoUrl() {
+        return photoUrl;
+    }
+
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
     }
 }

@@ -35,7 +35,7 @@ public class LoginPatient extends ActionBarActivity {
 
     public void LogOnserver(){
         RestAdapter.Builder builder = new RestAdapter.Builder();
-        builder.setEndpoint("http://192.168.104.81:9000");
+        builder.setEndpoint("http://192.168.1.67:9000");
         RestAdapter restAdapter = builder.build();
 
         PatientService service = restAdapter.create(PatientService.class);
